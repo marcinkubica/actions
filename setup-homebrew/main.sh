@@ -55,6 +55,7 @@ if ! which brew &>/dev/null; then
 fi
 
 # Show version
+which brew
 brew --version
 
 # Set basic variables

@@ -50,9 +50,12 @@ if ! which brew &>/dev/null; then
         #exit 1
         echo "::debug::just try generic install"
         sudo /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-        brew --version
+
     fi
 fi
+
+# Show version
+brew --version
 
 # Set basic variables
 HOMEBREW_PREFIX="$(brew --prefix)"

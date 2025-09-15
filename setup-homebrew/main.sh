@@ -49,7 +49,7 @@ if ! which brew &>/dev/null; then
         echo "Could not find 'brew' command in PATH or standard locations."
         #exit 1
         echo "::debug::just try generic install"
-        sudo /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+        /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
     fi
 fi

@@ -41,7 +41,7 @@ function git_retry {
     retry git "$@"
 }
 
-# Check brew's existence
+echo ":: Check brew's existence"
 if ! which brew &>/dev/null; then
     PATH="/home/linuxbrew/.linuxbrew/bin:/opt/homebrew/bin:/usr/local/bin:$PATH"
 
@@ -54,7 +54,7 @@ if ! which brew &>/dev/null; then
     fi
 fi
 
-# Show version
+echo ":: Show version"
 which brew
 brew --version
 
